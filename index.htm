@@ -1,0 +1,951 @@
+
+<!DOCTYPE html>
+<html lang="nl-be">
+
+<head>
+<meta charset="utf-8">
+<title>Xentrium challenge 1</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function changeColor(elem){
+	var cellcolor = elem.style.backgroundColor;
+	if(!(cellcolor == 'black')){
+		elem.style.backgroundColor = "black";	
+	}
+	else{
+		elem.style.backgroundColor= "";
+	}
+}
+</script>
+</head>
+
+
+<body background="tangramtiles2.jpg" style="opacity:1;">
+<div id="header">
+<center><H3>Xentrium Challenge 1</H3></center>
+</div>
+<div id= "logo">
+<img src="logo-300x300.png" width="160" height="160"></img>
+</div>
+<div id="updwngrid">
+<table width="420" height="160" border="1">
+	<tr>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td></td>
+		<td>3</td>
+		<td>1</td>
+		<td>3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td>1</td>
+		<td>4</td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>1</td>
+		<td></td>		
+		<td></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>1</td>
+		<td>7</td>
+		<td></td>
+		<td>1</td>
+		<td>1</td>
+		<td>2</td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>2</td>
+		<td>3</td>
+		<td>1</td>
+		<td>3</td>
+		<td>1</td>
+		<td>7</td>
+	</tr>
+		<tr>
+		<td>7</td>
+		<td>2</td>
+		<td>2</td>
+		<td>3</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td></td>
+		<td>2</td>
+		<td>2</td>
+		<td>1</td>
+		<td>2</td>
+		<td></td>
+		<td>2</td>
+		<td>7</td>
+		<td>1</td>
+		<td>1</td>
+		<td>4</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+		<tr>
+		<td>2</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>2</td>
+		<td>1</td>
+		<td></td>
+		<td>4</td>
+		<td>2</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>2</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+		<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>3</td>
+		<td>3</td>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>2</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>6</td>
+		<td>2</td>
+		<td>1</td>
+		<td>1</td>
+		<td>3</td>
+		<td>1</td>
+		<td>2</td>
+		<td>5</td>
+		<td>1</td>
+	</tr>
+		<tr>
+		<td>7</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>7</td>
+		<td>1</td>
+		<td>5</td>
+		<td>5</td>
+		<td>1</td>
+		<td>1</td>
+		<td>5</td>
+		<td>1</td>
+		<td>1</td>
+		<td>2</td>
+		<td>1</td>
+		<td>1</td>
+		<td>2</td>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	
+</table>
+</div>
+<div id="playgrid">
+<table width="420" height="420">
+  <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+	 <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+	 <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+  
+   <tr>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+	<td id="cell" onclick="changeColor(this)"></td>
+  </tr>
+</table>
+</div>
+<br><br><br>
+
+
+
+ 
+<div id="lrgrid">
+<table width="160" height="420" border="1">
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>7</td>
+	<td>1</td>
+	<td>1</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>7</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td>4</td>
+	<td>2</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>2</td>
+	<td>2</td>
+	<td>4</td>
+	<td>7</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>7</td>
+	<td>2</td>
+	<td>1</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>3</td>
+	<td>3</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>7</td>
+	<td>3</td>
+	<td>2</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>3</td>
+	<td>1</td>
+	<td>4</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>7</td>
+	<td>4</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+</table>
+</div>
+<div id="footer">
+<center>Follow on <a href="https://twitter.com/xen3c">twitter</a> or join the community at <a href="https://t.me/Xentrium_community">telegram</a></center>
+</div>
+</body>
+
+</html>

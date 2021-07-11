@@ -1,0 +1,46 @@
+#header {
+	position: absolute;
+	left: 660px;
+	top: 10px;
+	min-height: 100px;
+}
+#updwngrid {
+	background-color: gold;
+	opacity: 0.6;
+	position: absolute;
+    left: 540px;
+	top: 60px;
+	font-size:8pt;
+}
+#lrgrid {
+	background-color: gold;
+	opacity: 0.6;
+	position: absolute;
+    left: 300px;
+	top: 280px;
+	font-size:8pt;
+}
+#playgrid {
+	position: absolute;
+    left: 540px;
+	top: 280px;
+}
+#footer {
+	position: absolute;
+	left: 560px;
+	top: 710px;
+	min-height: 100px;
+}
+#logo {
+	position: absolute;
+	top: 60px;
+	left: 300px;
+}
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+table tr td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
